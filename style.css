@@ -6,6 +6,7 @@
                     }
 
         div#interface{
+            position: static;
             width: 1450px;
             background-color: lightgrey;
             padding: 0px 0px 10px 10px;
@@ -44,9 +45,9 @@
 
         figure.foto-legenda img{
             position:relative;
-            width: 1120px;
+            width: 1122px;
             height: 400px;
-            margin: -15px 0px 10px -50px;
+            margin: 10px 0px 7px -50px;
         }
 
         figure.foto-legenda figcaption{
@@ -55,9 +56,9 @@
             color:white;
             top: 0%;
             background-color: rgba(0, 0, 0, .4);
-            width: 1120px;
+            width: 1122px;
             height: 400px;
-            margin: -15px 0px 50px -50px;
+            margin: 10px 0px 7px -50px;
             padding: 10px;
             box-sizing: border-box;
             transition: 1s;
@@ -79,7 +80,7 @@ nav#menu ol{
     text-transform:uppercase;
     position:absolute;
     top: -20px;
-    left:-20px;
+    left:-15px;
      
 }
 
@@ -95,18 +96,19 @@ nav#menu li{
 
 nav figure img#icone{
     position: absolute;
-    width: 60px;
-    height: 50px;
+    width: 80px;
+    height: 60px;
     padding: 4px 0px 0px 0px;
     top: -12px;
-    left: 390px;
+    left: 338px;
     background-color: lightgrey;
-    border-radius: 30%;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);    
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);  
+    z-index: 0;  
 }
 
 nav#menu{
     display: block;
+    font-weight: bolder;
 }
 
 nav#menu h1{
@@ -123,14 +125,11 @@ nav#menu li:hover{
     color:white;
 }
 
-a:hover{
-    text-decoration: none;
-    font-weight: bolder;
-}
+
 
 header#cabecalho{
     position: relative;
-    border-bottom: 1px #606060 solid;
+    border-bottom: 1px #ababab solid;
     height: 120px;
     background-image: url(abstract-hexagon-header-right.png);
     background-repeat: no-repeat;
@@ -182,18 +181,30 @@ section#corpo{
     padding-right: 10px;
 }
 
+figure#fundoContatoEsquerdo{
+    position: absolute;
+    left: -10px;
+    bottom: -14px;
+}
+
+figure#fundoContatoDireito{
+    position: absolute;
+    right: -10px;
+    bottom: -14px;
+    z-index: 1;
+}
 
 aside{
     display: block;
     width: 299px;
     float: right;
     padding: 10px 20px 10px 19px;
-    border-left: 1px solid black;
+    border-left: 1px solid #ababab;
 }
 
 footer#rodape{
     clear: both;
-    border-top:1px solid black;
+    border-top:1px solid #ababab;
     text-align: center;
 }
 
@@ -213,6 +224,7 @@ table#tabela{
     border:1px solid black;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     border-spacing: 3px;
     box-shadow: 2px 2px 2px black;
 }
@@ -249,7 +261,7 @@ article#noticia-principal{
     background-color: #c0c0c0;
     color: black;
     padding: 5px 10px 5px 10px;
-    margin: 60px 0px 20px 0px;
+    margin: 60px 10px 30px 10px;
     box-shadow: inset 1px 1px 4px 1px lightgray;
 }
 
@@ -343,5 +355,84 @@ figure#sustentabilidade:hover img {
 .legenda p{
     padding: 5px 5px 5px 30px; 
     margin: 0; 
+}
+
+.form-container {
+    position: relative;
+    background-color: #c0c0c0;
+    padding: 30px 60px 10px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: -10px 400px 5px 400px;
+    outline: none; 
+    border-color: rgba(52, 152, 219, 0.5); 
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); 
+    z-index: 2;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: rgba(52, 152, 219);
+    margin: 0px 30px 30px 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; 
+    font-weight: 600;
+    margin-bottom: 8px;
+    color:rgba(52, 152, 219)
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; 
+    padding: 12px 15px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none; 
+    border-color: rgba(52, 152, 219, 0.5); 
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); 
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group button {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(30, 115, 190);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    left: 15px;
+    margin-bottom: -15px;
+
+}
+
+.form-group button:hover {
+    background-color: rgb(26, 99, 162);
+
 }
 
