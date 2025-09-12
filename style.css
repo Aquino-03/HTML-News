@@ -181,19 +181,6 @@ section#corpo{
     padding-right: 10px;
 }
 
-figure#fundoContatoEsquerdo{
-    position: absolute;
-    left: -10px;
-    bottom: -14px;
-}
-
-figure#fundoContatoDireito{
-    position: absolute;
-    right: -10px;
-    bottom: -14px;
-    z-index: 1;
-}
-
 aside{
     display: block;
     width: 299px;
@@ -284,8 +271,8 @@ figure#foto-saibaMais img{
     position:absolute;
     width: 600px;
     height: 310px;
-    right: 45px;
-    bottom: -22px;
+    left: 75%;
+    bottom: 2%;
     float: right;
     z-index: 2;
 }
@@ -305,14 +292,15 @@ figure#world {
 
 figure#sustentabilidade {
     position: absolute; 
-    left: 850px;
-    bottom: 360px;
+    left: 75%;
+    bottom: 78%;
 }
 
 figure#world {
+    display: block;
     position: absolute;
-    left: 850px;
-    bottom: 260px;
+    left: 77%;
+    bottom: 60%;
 }
 
 figure#sustentabilidade img,
@@ -363,12 +351,12 @@ figure#sustentabilidade:hover img {
     padding: 30px 60px 10px 30px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
-    margin: -10px 400px 5px 400px;
+    max-width: 550px;
+    margin: 2% 34%;
     outline: none; 
     border-color: rgba(52, 152, 219, 0.5); 
     box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); 
-    z-index: 2;
+    z-index:2;
 }
 
 .form-container h2 {
@@ -411,7 +399,7 @@ figure#sustentabilidade:hover img {
 }
 
 .form-group textarea {
-    resize: none;
+    resize: vertical;
 }
 
 .form-group button {
@@ -433,6 +421,5 @@ figure#sustentabilidade:hover img {
 
 .form-group button:hover {
     background-color: rgb(26, 99, 162);
-
 }
 
